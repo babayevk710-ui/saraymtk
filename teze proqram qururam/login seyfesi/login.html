@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#071116">
+	<title>Tiger X | Giriş</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<main class="page">
+		<section class="visual" aria-label="Tiger X idarəetmə paneli">
+			<div class="topline">
+				<div class="brand">
+					<span class="brand-mark"><img src="../ana seyfe/TIGERX.jpeg" alt="Tiger X logo"></span>
+					<span class="brand-text">Tiger X</span>
+				</div>
+				<span class="system-code"><i></i> SİSTEM AKTİVDİR</span>
+			</div>
+			<div class="visual-main">
+				<p class="terminal-label">// əməliyyat mərkəzi</p>
+				<h1>Mağazanızın<br><em>ritmini</em> idarə edin.</h1>
+				<p>Satışdan stoka qədər bütün mağaza əməliyyatlarını bir paneldə görün, qərarları daha sürətli verin.</p>
+				<div class="dashboard-preview" aria-label="Sistem göstəriciləri">
+					<div class="preview-head"><span>GÜNÜN İCMALI</span><span>VERİ GÖZLƏNİLİR</span></div>
+					<div class="empty-summary">
+						<div class="empty-icon" aria-hidden="true">+</div>
+						<strong>Bu gün üçün məlumat yoxdur</strong>
+						<span>Satış və kassa əməliyyatları başladıqda icmal burada görünəcək.</span>
+					</div>
+				</div>
+			</div>
+			<div class="visual-footer"><span class="mark">Bütün əməliyyatlar qorunur.</span><span>v2.4.0</span></div>
+		</section>
+
+		<section class="form-side">
+			<div class="form-wrap">
+				<div class="form-heading"><div class="lock-icon">⌁</div><p class="eyebrow">Tiger X sistemi</p></div>
+				<h2>İdarəetmə panelinə<br>xoş gəlmisiniz.</h2>
+				<p class="intro">Davam etmək üçün giriş məlumatlarınızı daxil edin.</p>
+				<form id="login-form">
+					<div class="field">
+						<label for="login">İSTİFADƏÇİ LOGİNİ</label>
+						<input id="login" name="login" type="text" placeholder="Logininizi daxil edin" autocomplete="username" required>
+					</div>
+					<div class="field">
+						<label for="password">ŞİFRƏ</label>
+						<div class="input-wrap">
+							<input class="password-input" id="password" name="password" type="password" placeholder="Şifrənizi daxil edin" autocomplete="current-password" required>
+							<button class="toggle-password" type="button" aria-label="Şifrəni göstər">GÖSTƏR</button>
+						</div>
+					</div>
+					<button class="submit" type="submit"><span>Daxil ol</span><b aria-hidden="true">↗</b></button>
+					<p class="form-message" id="form-message" role="alert" aria-live="polite"></p>
+				</form>
+				<p class="security-note"><span>●</span> Giriş yalnız icazəli şəbəkədən mümkündür</p>
+			</div>
+		</section>
+	</main>
+	<script src="login.js"></script>
+</body>
+</html>

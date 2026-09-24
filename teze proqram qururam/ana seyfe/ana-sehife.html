@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071116">
+  <title>Market ERP | Əsas səhifə</title>
+  <link rel="stylesheet" href="ana-sehife.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <div class="brand-mark" aria-label="Tiger X logo">
+          <img src="TIGERX.jpeg" alt="Tiger X logo" />
+        </div>
+        <div><strong>Tiger X</strong><small>İdarəetmə sistemi</small></div>
+      </div>
+      <div class="branch-box"><span class="online-dot"></span><div><small>Aktiv filial</small><strong id="branch-name">Market Mərkəz Filialı</strong></div></div>
+      <nav class="navigation" aria-label="Əsas menyu">
+        <div class="nav-group"><span class="nav-caption">ƏMƏLİYYATLAR</span>
+          <a class="nav-item active" href="#qiymet-deyisenler" data-title="Qiymət Dəyişilənlər"><span class="nav-icon">↕</span>Qiymət Dəyişilənlər</a>
+          <a class="nav-item" href="#etiket-basimi" data-title="Etiket Çapı"><span class="nav-icon">▤</span>Etiket Çapı</a>
+          <a class="nav-item" href="#muddeti-bitmis" data-title="Müddəti Bitmiş Malların Silinməsi"><span class="nav-icon">⌫</span>Müddəti Bitmiş Malların Silinməsi</a>
+          <a class="nav-item" href="#sayim-view" data-title="Sayım"><span class="nav-icon">▣</span>Sayım</a>
+          <a class="nav-item" href="#firmaya-mal-qaytarilmasi-view" data-title="Firmaya Mal Qaytarılması"><span class="nav-icon">↙</span>Firmaya Mal Qaytarılması</a>
+          <a class="nav-item" href="#musteriden-qayidan-mallar-view" data-title="Müştəridən Qayıdan Mallar"><span class="nav-icon">↗</span>Müştəridən Qayıdan Mallar</a>
+        </div>
+        <div class="nav-group"><span class="nav-caption">SƏNƏDLƏR TOPLUSU</span>
+          <a class="nav-item" href="#alis-senedleri" data-title="Alış Sənədləri"><span class="nav-icon">↙</span>Alış Sənədləri</a>
+          <a class="nav-item" href="#satis-senedleri" data-title="Satış Sənədləri"><span class="nav-icon">↗</span>Satış Sənədləri</a>
+          <a class="nav-item" href="#anbar-senedleri" data-title="Anbar Sənədləri"><span class="nav-icon">▦</span>Anbar Sənədləri</a>
+        </div>
+        <div class="nav-group"><span class="nav-caption">HESABATLAR</span>
+          <a class="nav-item" href="#hesabatlar" data-title="Hesabatlar"><span class="nav-icon">⌁</span>Hesabatlar</a>
+          <a class="nav-item" href="#alis-hesabatlari" data-title="Alış Hesabatları"><span class="nav-icon">▥</span>Alış Hesabatları</a>
+          <a class="nav-item" href="#satis-hesabatlari" data-title="Satış Hesabatları"><span class="nav-icon">▥</span>Satış Hesabatları</a>
+          <a class="nav-item" href="#qaliq-hesabatlari" data-title="Qalıq Hesabatları"><span class="nav-icon">▥</span>Qalıq Hesabatları</a>
+        </div>
+        <div class="nav-group"><span class="nav-caption">TƏNZİMLƏMƏLƏR</span>
+          <a class="nav-item" href="#tenzimlemeler" data-title="Tənzimləmələr"><span class="nav-icon">⚙</span>Tənzimləmələr</a>
+          <a class="nav-item" href="#musteri-ayarları" data-title="Müştəri Ayarları"><span class="nav-icon">♙</span>Müştəri Ayarları</a>
+          <a class="nav-item" href="#kassa-ayarları" data-title="Kassa Ayarları"><span class="nav-icon">▣</span>Kassa Ayarları</a>
+          <a class="nav-item" href="#cashier-view" data-title="Kassir Ayarları"><span class="nav-icon">♙</span>Kassir Ayarları</a>
+          <a class="nav-item" href="#kassalara-yukleme" data-title="Kassalara Yükləmə"><span class="nav-icon">⇧</span>Kassalara Yükləmə</a>
+          <a class="nav-item" href="#anbar-ayarları" data-title="Anbar Ayarları"><span class="nav-icon">▤</span>Anbar Ayarları</a>
+          <a class="nav-item" href="#bonus-kart-ayarları" data-title="Bonus Kart Ayarları"><span class="nav-icon">◇</span>Bonus Kart Ayarları</a>
+          <a class="nav-item" href="#bonus-hesablamalari" data-title="Bonus Hesablamaları"><span class="nav-icon">%</span>Bonus Hesablamaları</a>
+          <a class="nav-item" href="#yetkiler" data-title="Yetkilər"><span class="nav-icon">✓</span>Yetkilər</a>
+          <a class="nav-item" href="#isciler" data-title="İşçilər"><span class="nav-icon">♧</span>İşçilər</a>
+          <a class="nav-item" href="#is-yerleri" data-title="İş yerləri"><span class="nav-icon">⌂</span>İş yerləri</a>
+          <a class="nav-item" href="#terezi-ayarları" data-title="Tərəzi Ayarları"><span class="nav-icon">⇄</span>Tərəzi Ayarları</a>
+        </div>
+        <div class="nav-group"><span class="nav-caption">SİYAHILAR</span>
+          <a class="nav-item" href="#mallarin-siyahisi" data-title="Malların Siyahısı"><span class="nav-icon">☷</span>Malların Siyahısı</a>
+          <a class="nav-item" href="#firmalarin-siyahisi" data-title="Firmaların Siyahısı"><span class="nav-icon">♧</span>Firmaların Siyahısı</a>
+          <a class="nav-item" href="#terminal" data-title="Terminal"><span class="nav-icon">▣</span>Terminal</a>
+        </div>
+      </nav>
+      <div class="sidebar-foot"><span class="online-dot"></span>Sistem bağlantısı aktivdir</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menyunu aç">☰</button>
+        <div class="breadcrumbs"><span>Əsas səhifə</span><b>/</b><strong id="page-title">İş paneli</strong></div>
+        <div class="workspace-tabs" id="workspace-tabs" aria-label="Açıq bölmələr"></div>
+        <div class="top-actions"><span class="date-label">19 Avqust 2026</span><button class="icon-button" type="button" aria-label="Bildirişlər">♢</button>
+          <div class="user-menu-wrap">
+            <button class="user-chip" id="user-menu-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              <span id="header-user-initials">KA</span>
+              <div><strong id="header-user-name">Admin</strong><small id="header-user-role">İdarəçi</small></div>
+            </button>
+            <div class="user-dropdown" id="user-dropdown" hidden>
+              <button class="logout-button" id="logout-button" type="button">Çıxış</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="content-area">
+        <section class="module-view employees-view" id="employees-view" hidden>
+          <div class="module-heading"><div><p class="section-kicker">İŞÇİ İDARƏETMƏSİ</p><h1>İşçilər</h1><p class="subtitle">İşçi məlumatlarını, iş rejimini, maaşı və menyu icazələrini idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="employees-view">Bağla</button><button class="primary-button" id="add-employee" type="button"><span>＋</span> Yeni işçi</button></div></div>
+          <div class="employee-toolbar"><label class="search-box"><span>⌕</span><input id="employee-search" type="search" placeholder="İşçi adı və ya login üzrə axtarış"></label><select id="employee-filter"><option value="all">Bütün işçilər</option><option value="active">Aktiv işçilər</option><option value="inactive">Passiv işçilər</option></select><span class="employee-count" id="employee-count">0 işçi</span></div>
+          <div class="employee-table-wrap"><table class="employee-table"><thead><tr><th>İşçi</th><th>Vəzifə</th><th>Əlaqə</th><th>Maaş</th><th>İş rejimi</th><th>Yetki</th><th>Status</th><th></th></tr></thead><tbody id="employee-list"></tbody></table><div class="table-empty" id="employee-empty"><span>♙</span><strong>Hələ işçi əlavə edilməyib</strong><p>İşçi məlumatlarını daxil etmək üçün “Yeni işçi” düyməsini seçin.</p></div></div>
+        </section>
+
+        <section class="module-view permissions-view" id="permissions-view" hidden>
+          <div class="module-heading permissions-heading"><div><p class="section-kicker">YETKİLƏR</p><h1>Yetkilər</h1><p class="subtitle">İşçinin hansı menyu və bölmələrə giriş hüququ olduğunu təyin edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="permissions-view">Bağla</button><button class="primary-button" id="save-employee-permission" type="button"><span>✓</span> Yadda saxla</button></div></div>
+
+          <div class="permission-overview">
+            <div class="permission-stat">
+              <small>Aktiv icazələr</small>
+              <strong>18</strong>
+              <span>Bu ay</span>
+            </div>
+            <div class="permission-stat accent">
+              <small>Seçilmiş işçi</small>
+              <strong>1</strong>
+              <span>Hazırda</span>
+            </div>
+            <div class="permission-stat">
+              <small>Filial</small>
+              <strong>3</strong>
+              <span>Aktiv</span>
+            </div>
+            <div class="permission-stat">
+              <small>Qeydlər</small>
+              <strong>24</strong>
+              <span>Şərh</span>
+            </div>
+          </div>
+
+          <div class="permission-layout">
+            <div class="permission-form-panel">
+              <div class="assignment-grid">
+                <label>İşçi<select id="assignment-employee"><option value="">İşçi seçin</option></select></label>
+                <label>Yetkiləndirmə başlığı<input id="assignment-title" type="text" placeholder="Məsələn: Gündəlik menyu icazələri"></label>
+                <label>İcra üsulu<select id="assignment-method"><option value="manual">Əl ilə</option><option value="auto">Avtomatik</option><option value="bulk">Toplu</option></select></label>
+                <label>Status<select id="assignment-status"><option value="active">Aktiv</option><option value="paused">Dayandırılıb</option><option value="pending">Gözləyir</option></select></label>
+                <label>Filial<select id="assignment-branch"><option>Market Mərkəz Filialı</option><option>Nizami Filialı</option><option>28 May Filialı</option></select></label>
+                <label>Yetkiləndirmə tarixi<input id="assignment-time" type="datetime-local"></label>
+              </div>
+
+              <div class="assignment-detail-box">
+                <div class="permission-selection-header">
+                  <div>
+                    <p class="section-kicker">MENYU İCAZƏLƏRİ</p>
+                    <strong>Yetkiləndiriləcək bölmələr</strong>
+                  </div>
+                  <small>Hansı menyu və bölmələrə giriş verəcəyinizi seçin.</small>
+                </div>
+                <div class="permission-grid" id="assignment-menu-list"></div>
+              </div>
+
+              <label class="bonus-notes assignment-notes">Əlavə məlumatlar<textarea id="assignment-details" rows="3" placeholder="Kim, nə vaxt, hansı məqsədlə yetkiləndirdi, hansı işlərə giriş verildi və başqa detallar..."></textarea></label>
+            </div>
+
+            <aside class="permission-side-panel">
+              <div class="side-panel-header">
+                <p class="section-kicker">XÜLASƏ</p>
+                <h2>İcazə profili</h2>
+              </div>
+
+              <div class="employee-preview">
+                <div class="employee-avatar">A</div>
+                <div>
+                  <strong>İşçi seçilməyib</strong>
+                  <small>Seçilmiş işçi adı burada görünəcək</small>
+                </div>
+              </div>
+
+              <ul class="summary-list">
+                <li><span>Filial</span><strong>Market Mərkəz</strong></li>
+                <li><span>Status</span><strong>Aktiv</strong></li>
+                <li><span>İcazə sayı</span><strong>0 bölmə</strong></li>
+                <li><span>Son dəyişiklik</span><strong>Bu gün</strong></li>
+              </ul>
+
+              <div class="mini-legend">
+                <span class="legend-dot safe"></span> Tam giriş
+                <span class="legend-dot warn"></span> Məhdud
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="module-view bonus-view" id="bonus-view" hidden>
+          <div class="module-heading bonus-heading"><div><p class="section-kicker">KAMPANİYA İDARƏETMƏSİ</p><h1>Bonus Hesablamaları</h1><p class="subtitle">Bonus kampaniyalarının vaxtını, filialını, şərtlərini və hədiyyələrini bir yerdən idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="bonus-view">Bağla</button><button class="primary-button" id="save-bonus-campaign" type="button"><span>✓</span> Kampaniyanı yadda saxla</button></div></div>
+          <form class="bonus-settings" id="bonus-settings">
+            <div class="bonus-section-title"><span>01</span><div><strong>Kampaniyanın əsas məlumatları</strong><small>Bonusun nə vaxt və harada işləyəcəyini müəyyən edin.</small></div><button class="bonus-section-toggle" id="toggle-bonus-settings" type="button" aria-expanded="false">Məlumatları aç</button></div>
+            <div class="bonus-grid"><label>Kampaniya adı<input id="bonus-name" required placeholder="Məsələn: Yay bonus kampaniyası"></label><label>Status<select id="bonus-status"><option value="active">Aktiv</option><option value="draft">Qaralama</option><option value="paused">Dayandırılıb</option></select></label><label>Başlanğıc tarixi<input id="bonus-start-date" type="date" required></label><label>Bitiş tarixi<input id="bonus-end-date" type="date" required></label><label>Başlanğıc saatı<input id="bonus-start-time" type="time" value="09:00" required></label><label>Bitiş saatı<input id="bonus-end-time" type="time" value="23:00" required></label></div>
+            <div class="bonus-section-title"><span>02</span><div><strong>Filial və gün seçimi</strong><small>Kampaniyanın hansı iş yerlərində və həftənin hansı günlərində işləyəcəyini seçin.</small></div></div>
+            <div class="bonus-choice-layout"><div><small class="choice-label">İş yerləri</small><div class="bonus-checks" id="bonus-branches"></div></div><div><small class="choice-label">Həftə günləri</small><div class="bonus-checks days" id="bonus-days"></div></div></div>
+            <div class="bonus-section-title"><span>03</span><div><strong>Əlavə tətbiq şərtləri</strong><small>Müştəri, səbət və bonusun birlikdə istifadə qaydalarını müəyyən edin.</small></div></div>
+            <div class="bonus-grid"><label>Müştəri qrupu<select id="bonus-customer"><option>Bütün müştərilər</option><option>Bonus kart sahibləri</option><option>Yeni müştərilər</option><option>Seçilmiş müştəri qrupu</option></select></label><label>Minimum alış məbləği (AZN)<input id="bonus-min-total" type="text" inputmode="numeric" placeholder="0"></label><label>Müştəri başına limit<input id="bonus-customer-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label>Ümumi kampaniya limiti<input id="bonus-total-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label class="check-label"><input id="bonus-stackable" type="checkbox"> Digər bonuslarla birlikdə tətbiq olunsun</label><label class="check-label"><input id="bonus-card-required" type="checkbox"> Bonus kart tələb olunsun</label></div><label class="bonus-notes">Qeyd və əlavə şərtlər<textarea id="bonus-notes" rows="2" placeholder="Kampaniya ilə bağlı əlavə izah..." ></textarea></label>
+          </form>
+          <section class="bonus-rules"><div class="bonus-rules-header"><div><p class="section-kicker">BONUS QAYDALARI</p><h2>Alış şərtləri və hədiyyələr</h2><p>Bir kampaniyada bir neçə fərqli qayda yarada bilərsiniz.</p></div><button class="primary-button" id="add-bonus-rule" type="button"><span>＋</span> Qayda əlavə et</button></div><div class="bonus-rule-list" id="bonus-rule-list"></div><div class="bonus-rule-empty" id="bonus-rule-empty"><span>＋</span><strong>Hələ bonus qaydası yoxdur</strong><p>Qayda əlavə et düyməsinə basaraq miqdar, qiymət, məbləğ və hədiyyə şərtləri yaradın.</p></div></section>
+        </section>
+        <section class="module-view customer-cards-view" id="customer-cards-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">BONUS KART SİSTEMİ</p><h1>Müştəri Kartları</h1><p class="subtitle">Müştəri kartlarını, əlaqə məlumatlarını və bonus balansını idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="customer-cards-view">Bağla</button><button class="primary-button" id="add-customer-card" type="button"><span>＋</span> Yeni müştəri kartı</button></div></div>
+          <div class="employee-toolbar customer-toolbar"><label class="search-box"><span>⌕</span><input id="customer-search" type="search" placeholder="Müştəri adı, kart nömrəsi və ya telefon üzrə axtarış"></label><select id="customer-filter"><option value="all">Bütün kartlar</option><option value="active">Aktiv kartlar</option><option value="blocked">Bloklanmış kartlar</option></select><span class="employee-count" id="customer-count">0 kart</span></div>
+          <div class="customer-table-wrap"><table class="employee-table customer-table"><thead><tr><th>Müştəri</th><th>Telefon</th><th>E-poçt</th><th>Kart növü</th><th>Bonus balansı</th><th>Status</th><th></th></tr></thead><tbody id="customer-list"></tbody></table><div class="table-empty" id="customer-empty"><span>◇</span><strong>Hələ müştəri kartı əlavə edilməyib</strong><p>Yeni müştəri kartı düyməsi ilə siyahıya kart əlavə edin.</p></div></div>
+        </section>
+
+        <section class="module-view products-view" id="products-view" hidden>
+          <div class="module-heading product-heading"><div><p class="section-kicker">MAL / SİYAHI</p></div></div>
+          <div class="employee-toolbar product-toolbar">
+            <label class="search-box product-search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Məhsul axtar"></label>
+            <div class="product-status-filters" aria-label="Məhsul statusu">
+              <button type="button" class="product-status-filter active" data-status="all">Bütün</button>
+              <button type="button" class="product-status-filter" data-status="active">Aktiv</button>
+              <button type="button" class="product-status-filter" data-status="inactive">Passiv</button>
+            </div>
+            <label class="product-type-filter-wrap"><span>Siyahı</span><select id="product-type-filter" class="product-filter-select">
+              <option value="all">Hamısı</option>
+              <option value="Mamul">Mamul</option>
+              <option value="Ticari mal">Ticari mal</option>
+              <option value="Koli">Koli</option>
+              <option value="Üretim malı">Üretim malı</option>
+              <option value="Xammal">Xammal</option>
+            </select></label>
+            <label class="product-type-filter-wrap"><span>Firma</span><select id="product-company-filter" class="product-filter-select">
+              <option value="all">Bütün firmalar</option>
+            </select></label>
+            <button class="primary-button compact-button" id="add-product" type="button"><span>＋</span> Əlavə et</button>
+            <button class="secondary-button compact-button" id="bulk-delete-products" type="button" hidden>Seçilənləri sil</button>
+            <span class="employee-count" id="product-count">0 məhsul</span>
+          </div>
+          <div class="product-table-wrap"><table class="employee-table product-table"><thead><tr><th class="product-select-col"><input type="checkbox" class="grid-select-all" aria-label="Bütün məhsulları seç"></th><th>Məhsul</th><th>Tip</th><th>Kod</th><th>Kateqoriya</th><th>Brend / Firma</th><th>Anbar</th><th>Stok</th><th>Alış</th><th>Satış</th><th>ƏDV</th><th>LF</th><th>Bonus</th><th>Status</th></tr></thead><tbody id="product-list"></tbody></table><div class="table-empty" id="product-empty" hidden></div></div>
+        </section>
+
+        <section class="module-view price-change-list-view" id="qiymet-deyisenler-view" hidden>
+          <div class="module-heading customer-heading modern-erp-heading"><div><p class="section-kicker">QİYMƏT DƏYİŞƏNLƏR</p><h1>Qiymət dəyişənlər</h1><p class="subtitle">Fakturaları izləyin və içindəki malların dəyişikliklərini dəqiq yoxlayın.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="qiymet-deyisenler-view">Bağla</button><button class="primary-button" id="qiymet-deyisenler-new-invoice" type="button"><span>＋</span> Yeni faktura</button></div></div>
+
+          <div class="price-change-summary">
+            <div class="summary-stat accent"><span>Ümumi sənəd</span><strong id="price-summary-total">0</strong><small>Aktiv</small></div>
+            <div class="summary-stat"><span>Təsdiqlənib</span><strong>0</strong><small>Qəbul edildi</small></div>
+            <div class="summary-stat"><span>Gözləyir</span><strong>0</strong><small>İcra</small></div>
+            <div class="summary-stat"><span>Qaralama</span><strong>0</strong><small>Draft</small></div>
+          </div>
+
+          <div class="employee-toolbar modern-toolbar"><label class="search-box"><span>⌕</span><input id="qiymet-deyisenler-search" type="search" placeholder="Faktura №, tarix və ya məhsul axtar"></label><span class="employee-count" id="qiymet-deyisenler-count">0 faktura</span></div>
+
+          <div class="customer-table-wrap modern-table-wrap"><table class="employee-table modern-erp-table"><thead><tr><th></th><th>Faktura №</th><th>Tarix</th><th>Göndərən</th><th>Status</th><th>Məbləğ fərqi</th><th></th></tr></thead><tbody id="qiymet-deyisenler-list"></tbody></table></div>
+        </section>
+
+        <section class="module-view price-change-detail-view" id="qiymet-deyisenler-faktura-view" hidden>
+          <div class="module-heading customer-heading modern-erp-heading"><div><p class="section-kicker">Faktura</p><h1 id="qiymet-faktura-header">Faktura detalları</h1><p class="subtitle" id="qiymet-faktura-subtitle">Seçilmiş fakturanın məhsullarını yoxlayın.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="qiymet-deyisenler-faktura-view">Bağla</button><button class="secondary-button" id="qiymet-faktura-save" type="button">Yadda saxla</button><button class="primary-button" id="qiymet-faktura-approve" type="button"><span>✓</span> Təsdiq et</button></div></div>
+
+          <div class="price-change-summary detail-summary">
+            <div class="summary-stat accent"><span>Toplam məhsul</span><strong id="qiymet-faktura-total-items">0</strong><small>Məhsul</small></div>
+            <div class="summary-stat"><span>Değişənlər</span><strong id="qiymet-faktura-change-count">0</strong><small>Fərq</small></div>
+            <div class="summary-stat"><span>Faiz dərəcəsi</span><strong id="qiymet-faktura-rate">0%</strong><small>Orta</small></div>
+            <div class="summary-stat"><span>Status</span><strong id="qiymet-faktura-status-summary">-</strong><small>Hazır</small></div>
+          </div>
+
+          <div class="purchase-document-shell">
+            <div class="purchase-document-header">
+              <div class="purchase-document-meta"><span>Faktura №</span><strong id="qiymet-faktura-number">-</strong></div>
+              <div class="purchase-document-meta"><span>Tarix</span><strong id="qiymet-faktura-date">-</strong></div>
+              <div class="purchase-document-meta"><span>Göndərən / Şəxs</span><strong id="qiymet-faktura-sender">-</strong></div>
+              <div class="purchase-document-meta"><span>Status</span><strong id="qiymet-faktura-status">-</strong></div>
+            </div>
+
+            <div class="customer-table-wrap modern-table-wrap detail-table-wrap"><table class="employee-table modern-erp-table"><thead><tr><th>Məhsul</th><th>Kod</th><th>Köhnə alış qiyməti</th><th>Yeni alış qiyməti</th><th>Faiz</th><th>Köhnə satış qiyməti</th><th>Yeni satış qiyməti</th><th>Alış miqdarı</th><th>Real stok</th></tr></thead><tbody id="qiymet-faktura-items"></tbody></table></div>
+          </div>
+        </section>
+
+        <section class="module-view label-print-view" id="etiket-basimi" hidden>
+          <div class="module-actions purchase-top-actions">
+            <div class="purchase-document-title-wrap"><span class="purchase-document-title">Etiket Çapı</span></div>
+            <button class="secondary-button module-close" type="button" data-close-view="etiket-basimi">Bağla</button>
+            <button class="primary-button" id="label-print-save" type="button"><span>✓</span> Çap et</button>
+          </div>
+
+          <div class="purchase-document-shell label-print-shell">
+            <div class="label-print-header-cards">
+              <div class="label-print-stat"><span>Məhsul sayı</span><strong id="label-print-product-count">0</strong><small>Ümumi</small></div>
+              <div class="label-print-stat"><span>Seçilən</span><strong id="label-print-selected-count">0</strong><small>Hazır</small></div>
+              <div class="label-print-stat"><span>Format</span>
+                <select id="label-print-format" aria-label="Çap formatı">
+                  <option value="label">40x20 mm etiket</option>
+                  <option value="a4">A4 vərəq (3 x 5)</option>
+                </select>
+                <small id="label-format-unit">mm</small>
+              </div>
+            </div>
+
+            <div class="label-print-grid">
+              <div class="label-print-panel">
+                <div class="label-print-panel-head">
+                  <div>
+                    <p class="section-kicker">MALLARIN SİYAHISI</p>
+                    <h2>Məhsulları seçin</h2>
+                  </div>
+                  <div class="label-panel-tools">
+                    <button class="secondary-button compact-button" id="label-terminal-open" type="button">Terminal</button>
+                    <label class="search-box compact-search"><span>⌕</span><input id="label-product-search" type="search" placeholder="Məhsul axtar"></label>
+                  </div>
+                </div>
+                <div class="label-quick-add-wrap">
+                  <label class="label-quick-field">
+                    <span>Barkod / axtarış</span>
+                    <input id="label-barcode-input" type="text" placeholder="Barkod yazın və Enter vurun" autocomplete="off">
+                  </label>
+                </div>
+                <div class="label-product-list-wrap">
+                  <table class="label-product-table">
+                    <thead>
+                      <tr>
+                        <th>Məhsul</th>
+                        <th>Kod</th>
+                        <th>Qiymət</th>
+                        <th>ƏDV</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="label-product-list"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="label-print-panel">
+                <div class="label-print-panel-head">
+                  <div>
+                    <p class="section-kicker">SİYAHI</p>
+                    <h2>Seçilənlər</h2>
+                  </div>
+                  <button class="secondary-button compact-button" id="label-clear-list" type="button">Təmizlə</button>
+                </div>
+                <div class="label-selected-list-wrap">
+                  <table class="label-selected-table">
+                    <thead>
+                      <tr>
+                        <th>Məhsul</th>
+                        <th>Miqdar</th>
+                        <th>Vahid</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="label-selected-list"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="label-print-panel preview-panel">
+                <div class="label-print-panel-head">
+                  <div>
+                    <p class="section-kicker">ÖN BAXIŞ</p>
+                    <h2>Etiket</h2>
+                  </div>
+                </div>
+                <div class="label-preview-box" id="label-preview-box">
+                  <div class="label-preview-card">
+                    <span class="label-brand">market / erp</span>
+                    <strong id="label-preview-name">Məhsul seçin</strong>
+                    <div class="label-meta">
+                      <span>Kod</span>
+                      <strong id="label-preview-code">-</strong>
+                    </div>
+                    <div class="label-meta">
+                      <span>Qiymət</span>
+                      <strong id="label-preview-price">0.00 ₼</strong>
+                    </div>
+                    <div class="label-barcode">||||||||||||</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="label-terminal-drawer" id="label-terminal-drawer" hidden>
+          <div class="label-terminal-modal">
+            <div class="label-terminal-header">
+              <div>
+                <p class="section-kicker">TERMINAL</p>
+                <h3>Terminaldan gələn sənəd</h3>
+              </div>
+              <button class="secondary-button compact-button" id="label-terminal-close" type="button">Bağla</button>
+            </div>
+
+            <div class="label-terminal-meta">
+              <div>
+                <span>Tarix</span>
+                <strong id="label-terminal-date">25.08.2026</strong>
+              </div>
+              <div>
+                <span>Sənəd №</span>
+                <strong>TERM-010</strong>
+              </div>
+            </div>
+
+            <div class="label-terminal-doc-wrap">
+              <table class="label-terminal-doc-table">
+                <thead>
+                  <tr>
+                    <th>Sənəd №</th>
+                    <th>Tarix</th>
+                    <th>Göndərən</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="label-terminal-doc-list"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <section class="module-view sayim-view" id="sayim-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">ANBAR / SAYIM</p><h1>Sayım</h1><p class="subtitle">Anbarda olan real balansı qeyd edin və fərqi yoxlayın.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="sayim-view">Bağla</button><button class="primary-button" type="button"><span>✓</span> Sayımı yadda saxla</button></div></div>
+          <div class="employee-toolbar"><label class="search-box"><span>⌕</span><input type="search" placeholder="Məhsul axtar"></label><select><option value="all">Bütün anbərlər</option><option value="main">Əsas Anbar</option><option value="storage">Mərkəzi Anbar</option></select><span class="employee-count">0 məhsul</span></div>
+          <div class="customer-table-wrap"><table class="employee-table"><thead><tr><th>Məhsul</th><th>Kod</th><th>Vahid</th><th>Sayım miqdarı</th><th>Real balans</th><th>Fərq</th><th>Status</th></tr></thead><tbody>
+            <tr><td>Ayran 1L</td><td>M-001</td><td>l</td><td><input type="number" value="60" class="purchase-edit-field"></td><td>58</td><td>+2</td><td><span class="status-pill active">Normal</span></td></tr>
+            <tr><td>Şokolad 100q</td><td>M-002</td><td>əd</td><td><input type="number" value="35" class="purchase-edit-field"></td><td>36</td><td>-1</td><td><span class="status-pill inactive">Fərq var</span></td></tr>
+          </tbody></table></div>
+        </section>
+
+        <section class="module-view supplier-return-view" id="firmaya-mal-qaytarilmasi-view" hidden>
+          <div class="module-actions purchase-top-actions">
+            <div class="purchase-document-title-wrap"><span class="purchase-document-title">Firmaya Mal Qaytarılması</span></div>
+            <button class="secondary-button module-close" type="button" data-close-view="firmaya-mal-qaytarilmasi-view">Bağla</button>
+            <button class="primary-button" id="supplier-return-save" type="submit" form="supplier-return-form"><span>✓</span> Qaytarma sənədini yadda saxla</button>
+          </div>
+          <div class="purchase-document-shell">
+            <form class="purchase-document-form" id="supplier-return-form">
+              <div class="purchase-header-grid">
+                <div class="purchase-left-panel">
+                  <div class="purchase-field-row compact">
+                    <label><span>Qaytarma No.</span><input id="supplier-return-number" type="text" value="QRT-2026-001" readonly></label>
+                    <label><span>Tarix</span><input id="supplier-return-date" type="date"></label>
+                  </div>
+                  <div class="purchase-field-row compact">
+                    <label><span>İş yeri</span><select id="supplier-return-workplace"><option>Market Mərkəz Filialı</option></select></label>
+                    <label><span>İstifadəçi</span><select id="supplier-return-user"><option>Admin</option></select></label>
+                  </div>
+                  <div class="purchase-field-row compact">
+                    <label class="wide-label"><span>Firma</span>
+                      <div class="purchase-supplier-input-wrap">
+                        <input id="supplier-return-company" type="text" value="Araz MMC" placeholder="Firma seçin" readonly>
+                        <button id="supplier-return-company-picker" type="button" class="inline-picker-button" aria-label="Firma seç">•••</button>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-table-shell">
+                <table class="purchase-item-table">
+                  <thead>
+                    <tr>
+                      <th>№</th>
+                      <th>Məhsul</th>
+                      <th>Kod</th>
+                      <th>Miqdar</th>
+                      <th>Vahid</th>
+                      <th>Qiymət</th>
+                      <th>Endirim</th>
+                      <th>Endirim cəmi</th>
+                      <th>Çıxılmış məbləğ</th>
+                      <th>Toplam</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="supplier-return-item-list"></tbody>
+                </table>
+              </div>
+              <div class="purchase-totals-box">
+                <div class="total-row"><span>Toplam məbləğ</span><strong id="supplier-return-total-amount">0.00 ₼</strong></div>
+                <div class="total-row"><span>Toplam endirim</span><strong id="supplier-return-total-discount">0.00 ₼</strong></div>
+                <div class="total-row"><span>Cəmi</span><strong id="supplier-return-subtotal">0.00 ₼</strong></div>
+                <div class="total-row"><span>Toplam KDV</span><strong id="supplier-return-total-vat">0.00 ₼</strong></div>
+                <div class="total-row grand"><span>Net</span><strong id="supplier-return-net-total">0.00 ₼</strong></div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="module-view customer-return-view" id="musteriden-qayidan-mallar-view" hidden>
+          <div class="module-actions purchase-top-actions">
+            <div class="purchase-document-title-wrap"><span class="purchase-document-title">Müştəridən Qayıdan Mallar</span></div>
+            <button class="secondary-button module-close" type="button" data-close-view="musteriden-qayidan-mallar-view">Bağla</button>
+          </div>
+
+          <div class="purchase-document-shell">
+            <div class="warehouse-doc-summary">
+              <div class="stat-card">
+                <span>Sənəd sayı</span>
+                <strong id="customer-return-doc-count">0</strong>
+                <small>Ümumi</small>
+              </div>
+              <div class="stat-card">
+                <span>Son tarix</span>
+                <strong id="customer-return-doc-latest-date">-</strong>
+                <small>Son sənəd</small>
+              </div>
+              <div class="stat-card">
+                <span>Status</span>
+                <strong>Hazır</strong>
+                <small>İdarəetmə</small>
+              </div>
+            </div>
+
+            <div class="warehouse-doc-table-wrap">
+              <table class="warehouse-doc-table">
+                <thead>
+                  <tr>
+                    <th>Tarix</th>
+                    <th>Faktura №</th>
+                    <th>Məbləğ</th>
+                    <th>Status</th>
+                    <th>Əməliyyat</th>
+                  </tr>
+                </thead>
+                <tbody id="customer-return-doc-list"></tbody>
+              </table>
+              <div id="customer-return-doc-empty" class="warehouse-doc-empty">Kassadan qaytarılan mallar hələ yoxdur.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module-view sales-documents-view" id="satis-senedleri-view" hidden>
+          <div class="module-actions purchase-top-actions">
+            <div class="purchase-document-title-wrap"><span class="purchase-document-title">Satış Sənədi</span></div>
+            <button class="secondary-button module-close" type="button" data-close-view="satis-senedleri-view">Bağla</button>
+            <button class="primary-button" id="sales-save" type="submit" form="sales-doc-form"><span>✓</span> Sənədi yadda saxla</button>
+          </div>
+
+          <div class="purchase-document-shell">
+            <form id="sales-doc-form" class="purchase-document-form">
+              <div class="purchase-header-grid">
+                <div class="purchase-left-panel">
+                  <div class="purchase-field-row compact">
+                    <label><span>İşlem No.</span><input id="sales-number" type="text" readonly placeholder="SAT-2026-001"></label>
+                    <label><span>Tarix</span><input id="sales-date" type="date" required></label>
+                  </div>
+                  <div class="purchase-field-row compact">
+                    <label><span>İş yeri</span><select id="sales-workplace"><option>Market Mərkəz Filialı</option></select></label>
+                    <label><span>İstifadəçi</span><select id="sales-user"><option>Admin</option></select></label>
+                  </div>
+                  <div class="purchase-field-row compact">
+                    <label class="wide-label"><span>Müştəri</span>
+                      <div class="purchase-supplier-input-wrap">
+                        <input id="sales-customer" type="text" placeholder="Müştəri seçin" required readonly>
+                        <button type="button" class="inline-picker-button" id="sales-customer-picker" aria-label="Müştəri seç">•••</button>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="purchase-table-shell">
+                <table class="purchase-item-table">
+                  <thead>
+                    <tr>
+                      <th>№</th>
+                      <th>Məhsul</th>
+                      <th>Kod</th>
+                      <th>Miqdar</th>
+                      <th>Vahid</th>
+                      <th>Qiymət</th>
+                      <th>Endirim</th>
+                      <th>Endirim cəmi</th>
+                      <th>Çıxılmış məbləğ</th>
+                      <th>Toplam</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="sales-item-list">
+                    <tr class="purchase-empty-row" data-purchase-placeholder="true">
+                      <td>1</td>
+                      <td class="purchase-product-picker-cell">
+                        <button type="button" class="purchase-product-picker-trigger" aria-label="Məhsul seç">•••</button>
+                        <span class="purchase-product-cell-label">Məhsul seç</span>
+                      </td>
+                      <td>—</td>
+                      <td><input class="purchase-edit-field" type="number" min="0" step="1" value="0" data-placeholder="true"></td>
+                      <td><input class="purchase-edit-field" type="text" value="əd" data-placeholder="true"></td>
+                      <td><input class="purchase-edit-field" type="number" min="0" step="0.01" value="0" data-placeholder="true"></td>
+                      <td><input class="purchase-edit-field" type="number" min="0" max="100" step="1" value="0" data-placeholder="true"></td>
+                      <td>0.00 ₼</td>
+                      <td>0.00 ₼</td>
+                      <td>0.00 ₼</td>
+                      <td><button type="button" class="inline-delete" aria-label="Sətiri sil">⌫</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="purchase-totals-box">
+                <div class="total-row"><span>Toplam məbləğ</span><strong id="sales-total-amount">0.00 ₼</strong></div>
+                <div class="total-row"><span>Toplam endirim</span><strong id="sales-total-discount">0.00 ₼</strong></div>
+                <div class="total-row"><span>Cəmi</span><strong id="sales-subtotal">0.00 ₼</strong></div>
+                <div class="total-row"><span>Toplam KDV</span><strong id="sales-total-vat">0.00 ₼</strong></div>
+                <div class="total-row grand"><span>Net</span><strong id="sales-net-total">0.00 ₼</strong></div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="module-view" id="muddeti-bitmis-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">ANBAR / MÜDDƏTİ BİTMİŞ</p><h1>Müddəti Bitmiş Malların Silinməsi</h1><p class="subtitle">Müddəti bitən malları seçin — əlavə etdikdə həmin miqdar stokdan çıxılır.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="muddeti-bitmis-view">Bağla</button></div></div>
+
+          <div class="purchase-document-shell">
+            <div class="purchase-header-grid">
+              <div class="purchase-left-panel">
+                <div class="purchase-field-row compact" style="position:relative;">
+                  <label class="wide-label"><span>Məhsul</span><input id="expired-product-search" type="search" placeholder="Məhsul adı, kodu və ya barkodu ilə axtarın" autocomplete="off"></label>
+                  <div id="expired-product-suggestions" class="expired-suggestion-list" hidden></div>
+                </div>
+                <div class="purchase-field-row compact">
+                  <label><span>Miqdar</span><input id="expired-product-qty" type="number" min="0" step="1" placeholder="0"></label>
+                  <label><span>Səbəb</span><input id="expired-product-reason" type="text" placeholder="Müddəti bitib"></label>
+                </div>
+                <div class="modal-actions" style="justify-content:flex-start;">
+                  <button class="primary-button" id="expired-product-add" type="button"><span>⌫</span> Stokdan çıx</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer-table-wrap" style="margin-top:18px;">
+            <div class="employee-toolbar"><span class="employee-count" id="expired-product-count">0 məhsul</span></div>
+            <table class="employee-table">
+              <thead>
+                <tr><th>Tarix</th><th>Məhsul</th><th>Miqdar</th><th>Səbəb</th><th>İstifadəçi</th></tr>
+              </thead>
+              <tbody id="expired-product-list"></tbody>
+            </table>
+            <div class="table-empty" id="expired-product-empty"><span>⌫</span><strong>Hələ müddəti bitmiş məhsul yoxdur</strong><p>Yuxarıdan məhsul seçib miqdarı yazın.</p></div>
+          </div>
+        </section>
+
+        <section class="module-view" id="alis-hesabatlari-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">HESABATLAR / ALIŞ</p><h1 class="report-title">Alış Hesabatı</h1><p class="subtitle">Alış sənədləri üzrə detallı hesabat.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="alis-hesabatlari-view">Bağla</button></div></div>
+          <div class="report-switch" style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;"></div>
+          <div class="customer-table-wrap">
+            <div class="employee-toolbar" style="justify-content:flex-end;"><span class="employee-count report-count">0 sətir</span></div>
+            <div class="report-filters" hidden></div>
+            <table class="employee-table">
+              <thead class="report-table-head"><tr><th>Yüklənir...</th></tr></thead>
+              <tbody class="report-list"></tbody>
+            </table>
+            <div class="table-empty report-empty" hidden><span>▥</span><strong>Nəticə yoxdur</strong><p>Filtrləri dəyişib yenidən yoxlayın.</p></div>
+          </div>
+        </section>
+
+        <section class="module-view" id="satis-hesabatlari-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">HESABATLAR / SATIŞ</p><h1 class="report-title">Satış Hesabatı</h1><p class="subtitle">Satış sənədləri üzrə detallı hesabat.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="satis-hesabatlari-view">Bağla</button></div></div>
+          <div class="report-switch" style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;"></div>
+          <div class="customer-table-wrap">
+            <div class="employee-toolbar" style="justify-content:flex-end;"><span class="employee-count report-count">0 sətir</span></div>
+            <div class="report-filters" hidden></div>
+            <table class="employee-table">
+              <thead class="report-table-head"><tr><th>Yüklənir...</th></tr></thead>
+              <tbody class="report-list"></tbody>
+            </table>
+            <div class="table-empty report-empty" hidden><span>▥</span><strong>Nəticə yoxdur</strong><p>Filtrləri dəyişib yenidən yoxlayın.</p></div>
+          </div>
+        </section>
+
+        <section class="module-view" id="qaliq-hesabatlari-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">HESABATLAR / QALIQ</p><h1 class="report-title">Qalıq Hesabatı</h1><p class="subtitle">Anbar qalığı və mal hərəkətləri.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="qaliq-hesabatlari-view">Bağla</button></div></div>
+          <div class="report-switch" style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;"></div>
+          <div class="customer-table-wrap">
+            <div class="employee-toolbar" style="justify-content:flex-end;"><span class="employee-count report-count">0 sətir</span></div>
+            <div class="report-filters" hidden></div>
+            <table class="employee-table">
+              <thead class="report-table-head"><tr><th>Yüklənir...</th></tr></thead>
+              <tbody class="report-list"></tbody>
+            </table>
+            <div class="table-empty report-empty" hidden><span>▥</span><strong>Nəticə yoxdur</strong><p>Filtrləri dəyişib yenidən yoxlayın.</p></div>
+          </div>
+        </section>
+
+        <section class="module-view" id="hesabatlar-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">HESABATLAR</p><h1 class="report-title">Hesabatlar</h1><p class="subtitle">Kassa, kontragent, ödəniş və gəlir hesabatları.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="hesabatlar-view">Bağla</button></div></div>
+          <div class="report-switch" style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;"></div>
+          <div class="customer-table-wrap">
+            <div class="employee-toolbar" style="justify-content:flex-end;"><span class="employee-count report-count">0 sətir</span></div>
+            <div class="report-filters" hidden></div>
+            <table class="employee-table">
+              <thead class="report-table-head"><tr><th>Yüklənir...</th></tr></thead>
+              <tbody class="report-list"></tbody>
+            </table>
+            <div class="table-empty report-empty" hidden><span>▥</span><strong>Nəticə yoxdur</strong><p>Filtrləri dəyişib yenidən yoxlayın.</p></div>
+          </div>
+        </section>
+
+        <section class="module-view companies-view" id="companies-view" hidden>
+          <div class="module-heading customer-heading"><div><p class="section-kicker">FİRMA / SİYAHI</p><h1>Firmaların Siyahısı</h1><p class="subtitle">Firma məlumatlarını, statusunu, borcunu və əlaqə detallarını burada idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="companies-view">Bağla</button><button class="primary-button" id="add-company" type="button"><span>＋</span> Yeni firma</button></div></div>
+          <div class="employee-toolbar"><label class="search-box"><span>⌕</span><input id="company-search" type="search" placeholder="Firma adı, kod və ya e-poçt üzrə axtarış"></label><select id="company-filter"><option value="all">Bütün firmalar</option><option value="active">Aktiv</option><option value="inactive">Passiv</option></select><span class="employee-count" id="company-count">0 firma</span></div>
+          <div class="customer-table-wrap"><table class="employee-table"><thead><tr><th>Yaradılıb</th><th>Ad</th><th>Kod</th><th>Status</th><th>Ünvan</th><th>E-poçt</th><th>Telefon</th><th>Borc limiti</th><th>Aktiv borc</th><th></th></tr></thead><tbody id="company-list"></tbody></table><div class="table-empty" id="company-empty"><span>♧</span><strong>Hələ firma əlavə edilməyib</strong><p>Yeni firma düyməsi ilə şirkət məlumatlarını yaradın.</p></div></div>
+        </section>
+
+        <section class="module-view alis-senedleri-view" id="alis-senedleri-view" hidden>
+          <div class="module-actions purchase-top-actions">
+            <div class="purchase-document-title-wrap"><span class="purchase-document-title">Alış Sənədi</span></div>
+            <button class="secondary-button module-close" type="button" data-close-view="alis-senedleri-view">Bağla</button>
+            <button class="primary-button" id="purchase-save" type="submit" form="purchase-doc-form"><span>✓</span> Sənədi yadda saxla</button>
+          </div>
+
+          <div class="purchase-document-shell">
+            <form id="purchase-doc-form" class="purchase-document-form">
+              <div class="purchase-header-grid">
+                <div class="purchase-left-panel">
+                  <div class="purchase-field-row compact">
+                    <label><span>İşlem No.</span><input id="purchase-number" type="text" readonly placeholder="AL-2026-001"></label>
+                    <label><span>Tarix</span><input id="purchase-date" type="date" required></label>
+                  </div>
+                  <div class="purchase-field-row compact">
+                    <label><span>İş yeri</span><select id="purchase-workplace"></select></label>
+                    <label><span>İstifadəçi</span><select id="purchase-user"></select></label>
+                  </div>
+                  <div class="purchase-field-row compact">
+                    <label class="wide-label"><span>Tedarikçi</span>
+                      <div class="purchase-supplier-input-wrap">
+                        <input id="purchase-supplier" type="text" placeholder="Tedarikçi seçin" required readonly>
+                        <button type="button" class="inline-picker-button" id="purchase-supplier-picker" aria-label="Tedarikçi seç">•••</button>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="purchase-table-shell">
+                <table class="purchase-item-table">
+                  <thead>
+                    <tr>
+                      <th>№</th>
+                      <th>Məhsul</th>
+                      <th>Kod</th>
+                      <th>Miqdar</th>
+                      <th>Vahid</th>
+                      <th>Qiymət</th>
+                      <th>Endirim</th>
+                      <th>Endirim cəmi</th>
+                      <th>Çıxılmış məbləğ</th>
+                      <th>Toplam</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="purchase-item-list"></tbody>
+                </table>
+              </div>
+
+              <div class="purchase-totals-box">
+                <div class="total-row"><span>Toplam məbləğ</span><strong id="purchase-total-amount">0.00 ₼</strong></div>
+                <div class="total-row"><span>Toplam endirim</span><strong id="purchase-total-discount">0.00 ₼</strong></div>
+                <div class="total-row grand"><span>Net</span><strong id="purchase-net-total">0.00 ₼</strong></div>
+              </div>
+            </form>
+          </div>
+
+        </section>
+
+        <section class="module-view cashier-view" id="cashier-view" hidden>
+          <div class="module-heading cashier-heading"><div><p class="section-kicker">İŞÇİ / KASSİR</p><h1>Kassir Ayarları</h1><p class="subtitle">Kassir işçinin girişlərini, statusunu, filialını, icazələrini və satış qaydalarını idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="cashier-view">Bağla</button><button class="primary-button" id="add-cashier" type="button"><span>＋</span> Yeni kassir</button></div></div>
+          <div class="employee-toolbar cashier-toolbar"><label class="search-box"><span>⌕</span><input id="cashier-search" type="search" placeholder="Kassir adı, login və ya giriş kodu üzrə axtarış"></label><select id="cashier-filter"><option value="all">Bütün kassirlər</option><option value="active">Aktiv kassirlər</option><option value="blocked">Bloklanmış kassirlər</option></select><span class="employee-count" id="cashier-count">0 kassir</span></div>
+          <div class="customer-table-wrap cashier-table-wrap"><table class="employee-table cashier-table"><thead><tr><th>Kassir</th><th>Login / giriş kodu</th><th>Filial / kassa</th><th>İcazələr</th><th>Endirim limiti</th><th>Status</th><th></th></tr></thead><tbody id="cashier-list"></tbody></table><div class="table-empty" id="cashier-empty"><span>▣</span><strong>Hələ kassir əlavə edilməyib</strong><p>Yeni kassir düyməsi ilə kassa istifadəçisi yaradın.</p></div></div>
+        </section>
+
+        <section class="module-view kassa-ayarları-view" id="kassa-ayarları-view" hidden>
+          <div class="module-heading cashier-heading"><div><p class="section-kicker">KASSA / AVTOMATİZASİYA</p><h1>Kassa Ayarları</h1><p class="subtitle">Kassa aparatlarının, kompüterlərin, printerlərin, IP ünvanlarının və satış nöqtələrinin konfiqurasiyasını idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="kassa-ayarları-view">Bağla</button><button class="primary-button" id="add-kassa-ayar" type="button"><span>＋</span> Yeni kassa</button></div></div>
+
+          <div class="server-settings-panel">
+            <div class="panel-heading server-config-heading">
+              <div>
+                <p class="section-kicker">SERVER / DB / EDV</p>
+                <h2>Server və məlumat bazası konfiqurasiyası</h2>
+              </div>
+              <button class="primary-button compact-button" id="save-server-config" type="button"><span>✓</span> Yadda saxla</button>
+            </div>
+
+            <form id="server-settings-form" class="server-settings-form">
+              <div class="server-settings-grid">
+                <label>Server IP<input id="server-ip" type="text" placeholder="94.20.88.181"></label>
+                <label>Server Port<input id="server-port" type="text" placeholder="5050"></label>
+                <label>DB Host<input id="db-host" type="text" placeholder="localhost"></label>
+                <label>DB Port<input id="db-port" type="text" placeholder="3306"></label>
+                <label>DB User<input id="db-user" type="text" placeholder="root"></label>
+                <label>DB Parol<input id="db-password" type="password" placeholder="********"></label>
+                <label>Tax device IP<input id="tax-device-ip" type="text" placeholder="192.168.1.20"></label>
+                <label>Tax device Port<input id="tax-device-port" type="text" placeholder="9100"></label>
+              </div>
+            </form>
+          </div>
+
+          <div class="employee-toolbar cashier-toolbar"><label class="search-box"><span>⌕</span><input id="kassa-search" type="search" placeholder="Kassa adı, IP və ya filial üzrə axtarış"></label><select id="kassa-filter"><option value="all">Bütün kassalar</option><option value="active">Aktiv kassalar</option><option value="offline">Offline kassalar</option><option value="maintenance">Xidmətdə</option></select><span class="employee-count" id="kassa-count">0 kassa</span></div>
+          <div class="customer-table-wrap cashier-table-wrap"><table class="employee-table cashier-table"><thead><tr><th>Kassa</th><th>Filial / anbar</th><th>IP / stansiya</th><th>Avadanlıq</th><th>Yüklənmə</th><th>Status</th><th></th></tr></thead><tbody id="kassa-list"></tbody></table><div class="table-empty" id="kassa-empty"><span>▣</span><strong>Hələ kassa əlavə edilməyib</strong><p>Yeni kassa düyməsi ilə kompüter və aparat konfiqurasiyasını əlavə edin.</p></div></div>
+        </section>
+
+        <section class="module-view workplaces-view" id="workplaces-view" hidden>
+          <div class="module-heading workplaces-heading"><div><p class="section-kicker">İŞ YERLƏRİ</p><h1>İş yerləri</h1><p class="subtitle">Filiallar, işyerləri və onların statuslarını burada idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="workplaces-view">Bağla</button><button class="primary-button" id="add-workplace" type="button"><span>＋</span> Yeni iş yeri</button></div></div>
+
+          <div class="workplace-summary">
+            <div class="workplace-stat"><small>Toplam iş yeri</small><strong id="workplace-total-count">0</strong><span>Aktiv</span></div>
+            <div class="workplace-stat"><small>Hazır status</small><strong>Online</strong><span>İdarə paneli</span></div>
+            <div class="workplace-stat"><small>Son dəyişiklik</small><strong>Bu gün</strong><span>24 saat</span></div>
+            <div class="workplace-stat"><small>İdarəetmə</small><strong>Filiallar</strong><span>İş yeri</span></div>
+          </div>
+
+          <div class="workplace-layout">
+            <div class="workplace-panel" style="width: 100%;">
+              <div class="panel-heading"><div><p class="section-kicker">SİYAHI</p><h2>İş yerləri</h2></div></div>
+              <div class="workplace-list" id="workplace-list"></div>
+              <div class="table-empty" id="workplace-empty"><span>⌂</span><strong>Hələ iş yeri əlavə edilməyib</strong><p>Yeni iş yeri yaradaraq filial, ünvan və status parametrlərini təyin edin.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module-view anbar-senedleri-view" id="anbar-senedleri-view" hidden>
+          <div class="module-heading workplaces-heading"><div><p class="section-kicker">ANBAR / SƏNƏDLƏR</p><h1>Anbar Sənədləri</h1><p class="subtitle">Yadda saxlanılmış alış, satış və qaytarma sənədləri burada siyahılanır.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="anbar-senedleri-view">Bağla</button></div></div>
+
+          <div class="workplace-summary">
+            <div class="workplace-stat accent"><small>Sənəd sayı</small><strong id="warehouse-doc-count">0</strong><span>Ümumi</span></div>
+            <div class="workplace-stat"><small>Son tarix</small><strong id="warehouse-doc-latest-date">-</strong><span>Son sənəd</span></div>
+            <div class="workplace-stat"><small>Status</small><strong>Hazır</strong><span>İdarəetmə</span></div>
+            <div class="workplace-stat"><small>Qeyd</small><strong>Ödəniş</strong><span>Yadda saxlanıb</span></div>
+          </div>
+
+          <div class="customer-table-wrap" style="margin-top: 18px;">
+            <div class="purchase-filter-row" style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:12px; padding:12px 14px; background:#f7fafc; border:1px solid #dfe7f3; border-radius:10px;">
+              <label style="flex:1; min-width:240px; display:flex; align-items:center; gap:8px; font-weight:600; color:#334155;">
+                <span>🔎</span>
+                <input id="warehouse-doc-search" type="search" placeholder="Sənəd nömrəsi, partiya, istifadəçi və ya tarix" style="flex:1; padding:10px 12px; border:1px solid #cbd5e1; border-radius:8px; font-size:14px; background:#fff;">
+              </label>
+              <label style="display:flex; align-items:center; gap:8px; font-weight:600; color:#334155;">
+                <span>Tip</span>
+                <select id="warehouse-doc-kind-filter" style="padding:10px 12px; border:1px solid #cbd5e1; border-radius:8px; background:#fff; min-width:180px; font-size:14px;">
+                  <option value="all">Hamısı</option>
+                  <option value="purchase">Alış</option>
+                  <option value="sales">Satış</option>
+                  <option value="supplier-return">Firmaya mal qaytarılması</option>
+                  <option value="customer-return">Müştəridən qaytarma</option>
+                </select>
+              </label>
+            </div>
+            <table class="employee-table">
+              <thead>
+                <tr>
+                  <th>Tarix</th>
+                  <th>№</th>
+                  <th>Tip</th>
+                  <th>Partiya</th>
+                  <th>İstifadəçi</th>
+                  <th>Məbləğ</th>
+                  <th>Status</th>
+                  <th>Əməliyyat</th>
+                </tr>
+              </thead>
+              <tbody id="warehouse-doc-list"></tbody>
+            </table>
+            <div class="table-empty" id="warehouse-doc-empty" hidden>
+              <span>▣</span>
+              <strong>Hələ sənəd yoxdur</strong>
+              <p>Alış, satış və ya qaytarma sənədi yadda saxlandıqda burada görünəcək.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="module-view warehouse-settings-view" id="warehouse-settings-view" hidden>
+          <div class="module-heading workplaces-heading"><div><p class="section-kicker">ANBAR AYARLARI</p><h1>Anbarlar</h1><p class="subtitle">Bu bölmədə iş yerlərinə aid anbarları yaradın, yönəldin və idarə edin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="warehouse-settings-view">Bağla</button><button class="primary-button" id="add-warehouse" type="button"><span>＋</span> Anbar əlavə et</button></div></div>
+
+          <div class="workplace-summary">
+            <div class="workplace-stat accent"><small>Anbarların sayı</small><strong id="warehouse-total-count">0</strong><span>Ümumi</span></div>
+            <div class="workplace-stat"><small>Seçilmiş iş yeri</small><strong id="selected-workplace-label">-</strong><span>Aktiv</span></div>
+            <div class="workplace-stat"><small>Status</small><strong>Hazır</strong><span>İdarəetmə</span></div>
+            <div class="workplace-stat"><small>Son dəyişiklik</small><strong>Bu gün</strong><span>24 saat</span></div>
+          </div>
+
+          <div class="workplace-layout">
+            <aside class="warehouse-panel" style="width: 100%;">
+              <div class="panel-heading"><div><p class="section-kicker">YENİ ANBAR</p><h2>Yeni anbarlar səbəti</h2></div></div>
+              <div class="warehouse-form">
+                <label>Anbar adı<input id="warehouse-name" type="text" placeholder="Məs. Əsas anbar"></label>
+                <label>Yerləşdiyi iş yeri<select id="warehouse-workplace"></select></label>
+                <label>Ümumi tutum<input id="warehouse-capacity" type="text" placeholder="400 m³"></label>
+                <button class="primary-button" id="add-warehouse-form" type="button"><span>＋</span> Anbar əlavə et</button>
+              </div>
+              <ul class="warehouse-list" id="warehouse-list"></ul>
+              <div class="warehouse-empty" id="warehouse-empty" hidden>
+                <span>▣</span>
+                <strong>Bu iş yerinə aid anbar yoxdur</strong>
+                <p>Yuxarıdakı formadan bu iş yerinə anbar əlavə edin.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="module-view kassalara-yukleme-view" id="kassalara-yukleme-view" hidden>
+          <div class="module-heading cashier-heading"><div><p class="section-kicker">KASSALARA YÜKLƏMƏ</p><h1>Kassalara Yükləmə</h1><p class="subtitle">Kassaya veriləcək məlumat növünü seçin, uyğun elementləri işarələyin və göndərin.</p></div><div class="module-actions"><button class="secondary-button module-close" type="button" data-close-view="kassalara-yukleme-view">Bağla</button><button class="primary-button" id="kassalara-yukleme-gonder" type="button"><span>⇧</span> Göndər</button></div></div>
+
+          <div class="transfer-shell">
+            <div class="transfer-panel">
+              <div class="transfer-grid">
+                <label>Kassa seçin<select id="kassalara-yukleme-kassa"></select></label>
+                <label>Yükləmə növü<select id="kassalara-yukleme-tipi">
+                  <option value="customers">Müştərilər</option>
+                  <option value="employees">İşçilər</option>
+                  <option value="cashiers">Kassirlər</option>
+                  <option value="products">Mallar</option>
+                  <option value="bonus-cards">Bonus kartları</option>
+                  <option value="warehouses">Anbarlar</option>
+                </select></label>
+              </div>
+              <div class="transfer-summary" id="kassalara-yukleme-summary">0 element hazırdır</div>
+              <div class="transfer-list" id="kassalara-yukleme-list"></div>
+            </div>
+
+            <aside class="transfer-side">
+              <div class="side-panel-header">
+                <p class="section-kicker">GÖNDƏRİLMƏ</p>
+                <h2>Son yükləmələr</h2>
+              </div>
+              <div class="transfer-history" id="kassalara-yukleme-queue"></div>
+              <div class="table-empty" id="kassalara-yukleme-empty"><span>⇧</span><strong>Hələ göndəriş yoxdu</strong><p>Yuxarıdakı seçimləri edib Göndər düyməsini basın.</p></div>
+            </aside>
+          </div>
+        </section>
+
+        <div class="dashboard-columns">
+          <section class="main-actions"><div class="section-header"><div><p class="section-kicker">QISA YOLLAR</p><h2>Ən çox istifadə olunanlar</h2></div><div class="shortcut-tools"><span id="shortcut-count">0 bölmə</span><button class="edit-shortcuts" id="edit-shortcuts" type="button" aria-expanded="false">Düzənlə</button></div></div><div class="action-list" id="shortcut-list" data-dropzone="shortcuts"></div></section>
+          <aside class="activity-panel"><div class="section-header"><div><p class="section-kicker">FƏALİYYƏT</p><h2>Son əməliyyatlar</h2></div></div><div class="activity-empty"><strong>Hələ əməliyyat yoxdur</strong><p>İlk satış, alış ya da anbar əməliyyatı burada görünəcək.</p></div></aside>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="employee-modal" hidden><section class="employee-modal" role="dialog" aria-modal="true" aria-labelledby="employee-modal-title"><div class="modal-header"><div><p class="section-kicker">İŞÇİ KARTI</p><h2 id="employee-modal-title">Yeni işçi</h2></div><button class="close-modal" id="close-employee-modal" type="button" aria-label="Pəncərəni bağla">×</button></div><form id="employee-form"><input type="hidden" id="employee-id"><div class="form-grid"><label>Ad soyad<input id="employee-name" required placeholder="Məsələn: Aysel Məmmədova"></label><label>Vəzifə<input id="employee-role" required placeholder="Məsələn: Kassir"></label><label>İş yeri / filial<input id="employee-workplace" required placeholder="Filial adı"></label><label>Telefon<input id="employee-phone" type="tel" required placeholder="+994 50 000 00 00"></label><label>Login<input id="employee-login" required autocomplete="off" placeholder="aysel.m"></label><label>Parol<input id="employee-password" type="password" required autocomplete="new-password" placeholder="İşçi parolu"></label><label>Maaş (AZN)<input id="employee-salary" type="number" min="0" step="0.01" required placeholder="0.00"></label><label>İş rejimi<select id="employee-shift" required><option value="Tam iş günü">Tam iş günü</option><option value="Növbəli iş">Növbəli iş</option><option value="Yarım iş günü">Yarım iş günü</option><option value="Saatlıq iş">Saatlıq iş</option></select></label><label>Başlama tarixi<input id="employee-start-date" type="date" required></label><label>Status<select id="employee-status"><option value="active">Aktiv</option><option value="inactive">Passiv</option></select></label></div><fieldset class="permissions-fieldset"><legend>Menyu icazələri</legend><div class="permission-grid" id="permission-list"></div></fieldset><div class="modal-actions"><button class="secondary-button" id="cancel-employee" type="button">Ləğv et</button><button class="primary-button" type="submit">Yadda saxla</button></div></form></section></div>
+  <div class="modal-backdrop" id="bonus-rule-modal" hidden><section class="bonus-rule-modal" role="dialog" aria-modal="true" aria-labelledby="bonus-rule-title"><div class="modal-header"><div><p class="section-kicker">BONUS QAYDASI</p><h2 id="bonus-rule-title">Yeni qayda əlavə et</h2></div><button class="close-modal" id="close-bonus-rule" type="button" aria-label="Pəncərəni bağla">×</button></div><form id="bonus-rule-form"><div class="bonus-rule-type"><button type="button" class="rule-type active" data-rule-type="amount">Məbləğə görə</button><button type="button" class="rule-type" data-rule-type="quantity">Miqdara görə</button><button type="button" class="rule-type" data-rule-type="product">Məhsula görə</button><button type="button" class="rule-type" data-rule-type="category">Kateqoriyaya görə</button></div><div class="bonus-grid"><label>Qayda adı<input id="rule-name" required placeholder="Məsələn: 3 al, 1 hədiyyə"></label><label>Şərt növü<select id="rule-condition"><option value="quantity">Miqdar</option><option value="price">Qiymət</option><option value="total">Cəmi məbləğ</option></select></label><label>Şərt miqdarı<input id="rule-condition-quantity" type="text" inputmode="numeric" placeholder="3"></label><label>Şərt qiyməti (AZN)<input id="rule-condition-price" type="text" inputmode="numeric" placeholder="0"></label><label>Şərt məbləği (AZN)<input id="rule-condition-total" type="text" inputmode="numeric" placeholder="50"></label></div><fieldset class="gift-box"><legend>Hədiyyə və nəticə</legend><div class="bonus-grid"><label>Hədiyyə növü<select id="rule-gift-type"><option>Bonus balı</option><option>Faiz endirimi</option><option>Pulsuz məhsul</option><option>Pulsuz çatdırılma</option><option>Kassa kuponu</option><option>Hədiyyə kartı</option></select></label><label>Hədiyyə miqdarı<input id="rule-gift-quantity" type="text" inputmode="numeric" placeholder="1"></label><label>Hədiyyə dəyəri (AZN)<input id="rule-gift-value" type="text" inputmode="numeric" placeholder="0"></label><label>Hədiyyə məhsulu<input id="rule-gift-product" placeholder="Məhsul adı və ya kodu"></label></div></fieldset><div class="bonus-grid"><label class="check-label"><input id="rule-first-purchase" type="checkbox"> Yalnız ilk alışda</label><label class="check-label"><input id="rule-online-only" type="checkbox"> Yalnız onlayn satışda</label><label class="check-label"><input id="rule-cashier-approval" type="checkbox"> Kassir təsdiqi tələb etsin</label><label>Qayda prioriteti<input id="rule-priority" type="text" inputmode="numeric" value="1"></label></div><div class="modal-actions"><button class="secondary-button" id="cancel-bonus-rule" type="button">Ləğv et</button><button class="primary-button" type="submit">Qaydanı əlavə et</button></div></form></section></div>
+  <div class="modal-backdrop" id="customer-card-modal" hidden><section class="employee-modal customer-card-modal" role="dialog" aria-modal="true" aria-labelledby="customer-card-title"><div class="modal-header"><div><p class="section-kicker">MÜŞTƏRİ KARTI</p><h2 id="customer-card-title">Yeni müştəri kartı</h2></div><button class="close-modal" id="close-customer-card" type="button" aria-label="Pəncərəni bağla">×</button></div><form id="customer-card-form"><input type="hidden" id="customer-id"><div class="form-grid"><label>Ad<input id="customer-first-name" required placeholder="Aysel"></label><label>Soyad<input id="customer-last-name" required placeholder="Məmmədova"></label><label>Ata adı<input id="customer-father-name" placeholder="Rauf qızı"></label><label>Telefon nömrəsi<input id="customer-phone" type="tel" required placeholder="+994 50 000 00 00"></label><label>E-poçt<input id="customer-email" type="email" placeholder="musteri@mail.az"></label><label>Doğum tarixi<input id="customer-birth-date" type="date"></label><label>Ünvan<input id="customer-address" placeholder="Şəhər, küçə, ev"></label><label>Kart növü<select id="customer-card-type"><option>Standart</option><option>Gümüş</option><option>Qızıl</option><option>Premium</option></select></label><label>Kart nömrəsi<input id="customer-card-number" required inputmode="numeric" maxlength="16" placeholder="16 rəqəm"></label><label>Bonus balansı<input id="customer-bonus-balance" type="text" inputmode="numeric" value="0" placeholder="0"></label><label>İstifadə limiti<input id="customer-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label>Status<select id="customer-status"><option value="active">Aktiv</option><option value="blocked">Bloklanıb</option></select></label></div><label class="bonus-notes customer-notes">Qeyd<textarea id="customer-notes" rows="2" placeholder="Müştəri haqqında əlavə qeyd"></textarea></label><div class="modal-actions"><button class="secondary-button" id="cancel-customer-card" type="button">Ləğv et</button><button class="primary-button" type="submit">Kartı yadda saxla</button></div></form></section></div>
+  <div class="modal-backdrop" id="product-modal" hidden><section class="employee-modal product-modal" role="dialog" aria-modal="true" aria-labelledby="product-title"><div class="modal-header"><div><p class="section-kicker">MƏHSUL KARTI</p><h2 id="product-title">Yeni məhsul</h2></div><button class="close-modal" id="close-product-modal" type="button" aria-label="Pəncərəni bağla">×</button></div><form id="product-form"><input type="hidden" id="product-id"><div class="form-grid"><label>Kod<input id="product-code" required placeholder="M-001"></label><label>Məhsul adı<input id="product-name" required placeholder="Ayran 1L"></label><label>Məhsul tipi<select id="product-type"><option value="Mamul">Mamul</option><option value="Ticari mal">Ticari mal</option><option value="Koli">Koli</option><option value="Üretim malı">Üretim malı</option><option value="Xammal">Xammal</option></select></label><label>Kateqoriya<select id="product-category"><option>Süd məhsulları</option><option>Ərzaq</option><option>Qənnadı</option><option>İçki</option><option>Yuyucu</option><option>Cab / Şirkət</option></select></label><label>Brend / firma<input id="product-brand" placeholder="Market Max"></label><label>Satıcı / firma<select id="product-company"><option value="">Heç biri</option></select></label><label>Əsas anbar<select id="product-warehouse"></select></label><label>Ölçü vahidi<select id="product-unit"><option>ədəd</option><option>kq</option><option>l</option><option>paket</option><option>qutu</option></select></label><label id="product-lf-code-field" hidden>LF kodu<input id="product-lf-code" type="text" inputmode="numeric" maxlength="4" placeholder="0001"></label><label id="product-plu-code-field" hidden>PLU kodu<input id="product-plu-code" type="text" inputmode="numeric" maxlength="6" placeholder="12345"></label><label class="barcode-field">Barkodlar<div class="barcode-input-row"><input id="product-barcode-input" type="text" inputmode="numeric" placeholder="860000000001"><button type="button" id="add-product-barcode" class="secondary-button small-button">+ əlavə et</button></div><div id="product-barcode-list" class="barcode-list"></div></label><label>ƏDV statusu<select id="product-tax-mode"><option value="taxable">Daxilidir</option><option value="exempt">Azaddır</option></select></label><label>ƏDV faizi (%)<input id="product-tax" type="number" min="0" max="100" step="1" value="18" placeholder="0"></label><label>Bonus tətbiq edilir?<select id="product-bonus-enabled"><option value="true">Bəli</option><option value="false">Xeyr</option></select></label><label>Bonus faizi (%)<input id="product-bonus-rate" type="number" min="0" max="100" step="1" value="0" placeholder="0"></label><label>Bonus qrupu<select id="product-bonus-group"><option>Bütün müştərilər</option><option>Bonus kartı</option><option>VIP</option><option>Yeni müştərilər</option><option>Seçilmiş qrup</option></select></label><label>Status<select id="product-status"><option value="active">Aktiv</option><option value="inactive">Passiv</option></select></label></div><label class="bonus-notes customer-notes">Qeyd<textarea id="product-notes" rows="2" placeholder="Məhsul haqqında əlavə məlumat, bonus şərtləri, tədarük məlumatları..."></textarea></label><div class="modal-actions"><button class="secondary-button" id="cancel-product" type="button">Ləğv et</button><button class="primary-button" type="submit">Yadda saxla</button></div></form></section></div>
+  <div class="modal-backdrop" id="purchase-product-picker-modal" hidden>
+    <section class="employee-modal purchase-product-picker-modal" role="dialog" aria-modal="true" aria-labelledby="purchase-product-picker-title">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">MƏHSUL SEÇİMİ</p>
+          <h2 id="purchase-product-picker-title">Məhsulları seçin</h2>
+        </div>
+        <button class="close-modal" id="close-purchase-product-picker" type="button" aria-label="Pəncərəni bağla">×</button>
+      </div>
+      <div class="purchase-picker-toolbar">
+        <label class="search-box"><span>⌕</span><input id="purchase-product-picker-search" type="search" placeholder="Məhsul axtar"></label>
+        <span class="employee-count" id="purchase-product-picker-count">0 məhsul</span>
+      </div>
+      <div class="purchase-picker-table-wrap">
+        <table class="employee-table purchase-picker-table">
+          <thead>
+            <tr>
+              <th class="product-select-col"><input type="checkbox" class="grid-select-all purchase-picker-select-all" aria-label="Bütün məhsulları seç"></th>
+              <th>Məhsul</th>
+              <th>Kateqoriya</th>
+              <th>Vahid</th>
+              <th>Qiymət</th>
+            </tr>
+          </thead>
+          <tbody id="purchase-product-picker-list"></tbody>
+        </table>
+      </div>
+      <div class="modal-actions">
+        <button class="secondary-button" id="cancel-purchase-picker" type="button">Ləğv et</button>
+        <button class="secondary-button" id="new-purchase-product" type="button">Yeni məhsul</button>
+        <button class="primary-button" id="confirm-purchase-picker" type="button">Seçilənləri əlavə et</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="sales-product-picker-modal" hidden>
+    <section class="employee-modal purchase-product-picker-modal" role="dialog" aria-modal="true" aria-labelledby="sales-product-picker-title">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">MƏHSUL SEÇİMİ</p>
+          <h2 id="sales-product-picker-title">Məhsulları seçin</h2>
+        </div>
+        <button class="close-modal" id="close-sales-product-picker" type="button" aria-label="Pəncərəni bağla">×</button>
+      </div>
+      <div class="purchase-picker-toolbar">
+        <label class="search-box"><span>⌕</span><input id="sales-product-picker-search" type="search" placeholder="Məhsul axtar"></label>
+        <span class="employee-count" id="sales-product-picker-count">0 məhsul</span>
+      </div>
+      <div class="purchase-picker-table-wrap">
+        <table class="employee-table purchase-picker-table">
+          <thead>
+            <tr>
+              <th class="product-select-col"><input type="checkbox" class="grid-select-all sales-picker-select-all" aria-label="Bütün məhsulları seç"></th>
+              <th>Məhsul</th>
+              <th>Kateqoriya</th>
+              <th>Vahid</th>
+              <th>Qiymət</th>
+            </tr>
+          </thead>
+          <tbody id="sales-product-picker-list"></tbody>
+        </table>
+      </div>
+      <div class="modal-actions">
+        <button class="secondary-button" id="cancel-sales-product-picker" type="button">Ləğv et</button>
+        <button class="secondary-button" id="new-sales-product" type="button">Yeni məhsul</button>
+        <button class="primary-button" id="confirm-sales-product-picker" type="button">Seçilənləri əlavə et</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="cashier-modal" hidden><section class="employee-modal cashier-modal" role="dialog" aria-modal="true" aria-labelledby="cashier-title"><div class="modal-header"><div><p class="section-kicker">KASSİR KARTI</p><h2 id="cashier-title">Yeni kassir</h2></div><button class="close-modal" id="close-cashier" type="button" aria-label="Pəncərəni bağla">×</button></div><form id="cashier-form"><input type="hidden" id="cashier-id"><div class="cashier-form-section"><p class="form-section-label">Şəxsi məlumatlar</p><div class="form-grid"><label>Ad<input id="cashier-first-name" required placeholder="Aysel"></label><label>Soyad<input id="cashier-last-name" required placeholder="Məmmədova"></label><label>Ata adı<input id="cashier-father-name" placeholder="Rauf qızı"></label><label>Telefon<input id="cashier-phone" type="tel" required placeholder="+994 50 000 00 00"></label></div></div><div class="cashier-form-section"><p class="form-section-label">Giriş və iş yeri</p><div class="form-grid"><label>Login<input id="cashier-login" required autocomplete="off" placeholder="aysel.m"></label><label>Giriş kodu<input id="cashier-code" required inputmode="numeric" maxlength="6" placeholder="6 rəqəm"></label><label>Parol<input id="cashier-password" type="password" required autocomplete="new-password" placeholder="Kassir parolu"></label><label>Filial<select id="cashier-workplace" required><option>Market Mərkəz Filialı</option><option>Nizami Filialı</option><option>28 May Filialı</option></select></label><label>Kassa nömrəsi<select id="cashier-register" required><option>Kassa 01</option><option>Kassa 02</option><option>Kassa 03</option><option>Mobil kassa</option></select></label><label>Kassa tipi<select id="cashier-register-type"><option>Əsas kassa</option><option>Yardımçı kassa</option><option>Mobil kassa</option></select></label></div></div><div class="cashier-form-section"><p class="form-section-label">Satış və qiymət səlahiyyətləri</p><div class="form-grid"><label>Qiymət siyahısı<select id="cashier-price-list"><option>Pərakəndə qiymət</option><option>Topdan qiymət</option><option>Kampaniya qiyməti</option><option>VIP qiymət</option></select></label><label>Növbə rejimi<select id="cashier-shift"><option>Tam gün</option><option>Səhər növbəsi</option><option>Axşam növbəsi</option><option>Növbəli iş</option></select></label><label>Maksimum endirim (%)<input id="cashier-discount" type="text" inputmode="numeric" value="0"></label><label>Günlük satış limiti (AZN)<input id="cashier-sales-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label>Günlük qaytarma limiti (AZN)<input id="cashier-return-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label>Status<select id="cashier-status"><option value="active">Aktiv</option><option value="blocked">Bloklanıb</option></select></label></div><div class="cashier-permission-grid"><label><input id="cashier-can-sale" type="checkbox" checked> Satış edə bilər</label><label><input id="cashier-can-purchase" type="checkbox"> Alış sənədi aça bilər</label><label><input id="cashier-can-return" type="checkbox"> Qaytarma edə bilər</label><label><input id="cashier-can-discount" type="checkbox"> Endirim verə bilər</label><label><input id="cashier-can-cancel" type="checkbox"> Çeki ləğv edə bilər</label><label><input id="cashier-needs-approval" type="checkbox" checked> Böyük əməliyyatda təsdiq tələb et</label></div></div><label class="bonus-notes cashier-notes">Qeyd<textarea id="cashier-notes" rows="2" placeholder="Kassir haqqında əlavə qeyd"></textarea></label><div class="modal-actions"><button class="secondary-button" id="cancel-cashier" type="button">Ləğv et</button><button class="primary-button" type="submit">Kassiri yadda saxla</button></div></form></section></div>
+  <div class="modal-backdrop" id="kassa-modal" hidden><section class="employee-modal cashier-modal" role="dialog" aria-modal="true" aria-labelledby="kassa-title"><div class="modal-header"><div><p class="section-kicker">KASSA KARTI</p><h2 id="kassa-title">Yeni kassa</h2></div><button class="close-modal" id="close-kassa-modal" type="button" aria-label="Pəncərəni bağla">×</button></div><form id="kassa-form"><input type="hidden" id="kassa-id"><div class="cashier-form-section"><p class="form-section-label">Kassa məlumatları</p><div class="form-grid"><label>Kassa adı<input id="kassa-name" required placeholder="Kassa 01"></label><label>Filial<select id="kassa-workplace" required></select></label><label>Anbar<select id="kassa-warehouse" required></select></label><label>Kassa növü<select id="kassa-type"><option>Standart POS</option><option>Mobil kassa</option><option>İnternet kassa</option><option>Yardımçı stansiya</option></select></label><label>İP ünvanı<input id="kassa-ip" type="text" placeholder="192.168.1.110"></label><label>Lan / Port<input id="kassa-port" type="text" placeholder="COM1 / 9100"></label></div></div><div class="cashier-form-section"><p class="form-section-label">Satış və qiymət parametrləri</p><div class="form-grid"><label>Qiymət siyahısı<select id="kassa-price-list"><option>Bazar qiyməti</option><option>Topdan qiymət</option><option>Kassada qiymət</option><option>Xüsusi tarif</option></select></label><label>Endirim limiti (%)<input id="kassa-discount" type="text" inputmode="numeric" value="0"></label><label>Günlük satış limiti (AZN)<input id="kassa-sales-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label>Günlük qaytarma limiti (AZN)<input id="kassa-return-limit" type="text" inputmode="numeric" placeholder="Limitsiz"></label><label>Status<select id="kassa-status"><option value="active">Aktiv</option><option value="offline">Offline</option><option value="maintenance">Xidmətdə</option></select></label><label>Yüklənmə vəziyyəti<select id="kassa-sync"><option value="online">Online</option><option value="syncing">Sinxronizasiya</option><option value="failed">Uğursuz</option></select></label></div></div><div class="cashier-form-section"><p class="form-section-label">Avadanlıq və qeyd</p><div class="form-grid"><label>Printer / skaner<input id="kassa-printer" type="text" placeholder="Epson TM-30"></label><label>Monitor / terminal<input id="kassa-terminal" type="text" placeholder="POS-5 / AIO"></label><label>Seriya nömrəsi<input id="kassa-serial" type="text" placeholder="SN-2026-001"></label><label>İstifadəçi / kassir<select id="kassa-cashier"><option value="">Seçilməyib</option></select></label></div><label class="bonus-notes cashier-notes">Qeyd<textarea id="kassa-notes" rows="3" placeholder="Kassa ilə bağlı əlavə qeyd, printer, şəbəkə, məlumat və tətbiq qaydaları..."></textarea></label></div><div class="modal-actions"><button class="secondary-button" id="cancel-kassa" type="button">Ləğv et</button><button class="primary-button" type="submit">Yadda saxla</button></div></form></section></div>
+  <div class="modal-backdrop" id="workplace-modal" hidden>
+    <section class="employee-modal" role="dialog" aria-modal="true" aria-labelledby="workplace-modal-title">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">İŞ YERİ</p>
+          <h2 id="workplace-modal-title">Yeni iş yeri</h2>
+        </div>
+        <button class="close-modal" id="close-workplace-modal" type="button" aria-label="Pəncərəni bağla">×</button>
+      </div>
+      <form id="workplace-form">
+        <input type="hidden" id="workplace-id">
+        <div class="form-grid">
+          <label>İş yeri kodu<input id="workplace-code" required placeholder="IS-001"></label>
+          <label>İş yeri adı<input id="workplace-name" required placeholder="Məsələn: Nizami Filialı"></label>
+          <label>İş yeri növü<select id="workplace-type"><option value="filial">Filial</option><option value="market">Market</option><option value="depo">Anbar / depo</option><option value="ofis">Ofis</option></select></label>
+          <label>Ünvan<input id="workplace-address" required placeholder="Şəhər, küçə, ev"></label>
+          <label>Telefon<input id="workplace-phone" type="tel" placeholder="+994 50 000 00 00"></label>
+          <label>Rəhbər / məsul şəxs<input id="workplace-manager" placeholder="Ad soyad"></label>
+          <label>Status<select id="workplace-status"><option value="active">Aktiv</option><option value="inactive">Passiv</option></select></label>
+        </div>
+        <div class="modal-actions">
+          <button class="secondary-button" id="cancel-workplace" type="button">Ləğv et</button>
+          <button class="primary-button" type="submit">Yadda saxla</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="company-modal" hidden>
+    <section class="employee-modal" role="dialog" aria-modal="true" aria-labelledby="company-modal-title">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">FİRMA KARTI</p>
+          <h2 id="company-modal-title">Yeni firma</h2>
+        </div>
+        <button class="close-modal" id="close-company-modal" type="button" aria-label="Pəncərəni bağla">×</button>
+      </div>
+      <form id="company-form">
+        <input type="hidden" id="company-id">
+        <div class="form-grid">
+          <label>Firma adı<input id="company-name" required placeholder="Məsələn: Araz MMC"></label>
+          <label>Kod<input id="company-code" required readonly placeholder="F-001"></label>
+          <label>Yaradılma tarixi<input id="company-created-at" type="date" required></label>
+          <label>Status<select id="company-status"><option value="active">Aktiv</option><option value="inactive">Passiv</option></select></label>
+          <label>Ünvan<input id="company-address" placeholder="Şəhər, küçə, ev"></label>
+          <label>E-poçt<input id="company-email" type="email" placeholder="info@firma.az"></label>
+          <label>Telefon<input id="company-phone" type="text" inputmode="numeric" pattern="[0-9+()\-\s]*" maxlength="20" placeholder="+994 50 000 00 00"></label>
+          <label>Borc limiti (AZN)<input id="company-debt" type="number" min="0" step="0.01" value="0" placeholder="0.00"></label>
+          <label>Borc statusu<select id="company-debt-status">
+            <option value="normal">Limit aşmağa icazə yoxdur</option>
+            <option value="limit_asib">Limit aşmağa icazə var</option>
+          </select></label>
+        </div>
+        <div class="modal-actions">
+          <button class="secondary-button" id="cancel-company" type="button">Ləğv et</button>
+          <button class="primary-button" type="submit">Yadda saxla</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="purchase-supplier-picker-modal" hidden>
+    <section class="employee-modal purchase-product-picker-modal" role="dialog" aria-modal="true" aria-labelledby="purchase-supplier-picker-title">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">TEDARÜKÇÜ SEÇİMİ</p>
+          <h2 id="purchase-supplier-picker-title">Tədarükçünü seçin</h2>
+        </div>
+        <button class="close-modal" id="close-purchase-supplier-picker" type="button" aria-label="Pəncərəni bağla">×</button>
+      </div>
+      <div class="purchase-picker-toolbar">
+        <label class="search-box"><span>⌕</span><input id="purchase-supplier-picker-search" type="search" placeholder="Firma axtar"></label>
+        <span class="employee-count" id="purchase-supplier-picker-count">0 firma</span>
+      </div>
+      <div class="purchase-picker-table-wrap">
+        <table class="employee-table purchase-picker-table">
+          <thead>
+            <tr>
+              <th>Firma</th>
+              <th>Kod</th>
+              <th>Telefon</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="purchase-supplier-picker-list"></tbody>
+        </table>
+      </div>
+      <div class="modal-actions">
+        <button class="secondary-button" id="cancel-purchase-supplier-picker" type="button">Ləğv et</button>
+        <button class="primary-button" id="add-purchase-supplier" type="button">Yeni tədarükçü</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="sales-customer-picker-modal" hidden>
+    <section class="employee-modal purchase-product-picker-modal" role="dialog" aria-modal="true" aria-labelledby="sales-customer-picker-title">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">MÜŞTƏRİ SEÇİMİ</p>
+          <h2 id="sales-customer-picker-title">Müştərini seçin</h2>
+        </div>
+        <button class="close-modal" id="close-sales-customer-picker" type="button" aria-label="Pəncərəni bağla">×</button>
+      </div>
+      <div class="purchase-picker-toolbar">
+        <label class="search-box"><span>⌕</span><input id="sales-customer-picker-search" type="search" placeholder="Müştəri axtar"></label>
+        <span class="employee-count" id="sales-customer-picker-count">0 müştəri</span>
+      </div>
+      <div class="purchase-picker-table-wrap">
+        <table class="employee-table purchase-picker-table">
+          <thead>
+            <tr>
+              <th>Müştəri</th>
+              <th>Telefon</th>
+              <th>E-poçt</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="sales-customer-picker-list"></tbody>
+        </table>
+      </div>
+      <div class="modal-actions">
+        <button class="secondary-button" id="cancel-sales-customer-picker" type="button">Ləğv et</button>
+        <button class="primary-button" id="add-sales-customer" type="button">Yeni müştəri</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="ana-sehife.js"></script>
+  <script src="menyular/etiket-capi.js"></script>
+  <script src="menyular/qiymet-deyisenler-list.js"></script>
+  <script src="menyular/qiymet-deyisenler-faktura.js"></script>
+  <script src="menyular/firmalar.js"></script>
+  <script src="menyular/alis-senedleri.js"></script>
+  <script src="menyular/satis-senedleri.js"></script>
+  <script src="menyular/sayim.js"></script>
+  <script src="menyular/firmaya-mal-qaytarilmasi.js"></script>
+  <script src="menyular/musteriden-qayidan-mallar.js"></script>
+  <script src="menyular/isciler.js"></script>
+  <script src="menyular/is-yerleri.js"></script>
+  <script src="menyular/anbarlar.js"></script>
+  <script src="menyular/bonus-hesablamalari.js"></script>
+  <script src="menyular/musteri-ayarları.js"></script>
+  <script src="menyular/kassa-ayarları.js"></script>
+  <script src="menyular/kassir-ayarları.js?v=20260924-cashier-retry"></script>
+  <script src="menyular/kassalara-yukleme.js"></script>
+  <script src="menyular/muddeti-bitmis.js"></script>
+  <script src="menyular/hesabatlar.js?v=20260924-cashier-filter"></script>
+</body>
+</html>

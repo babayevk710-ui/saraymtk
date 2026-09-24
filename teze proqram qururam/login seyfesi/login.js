@@ -1,4 +1,5 @@
 (() => {
+  const apiBaseUrl = String(window.TIGERX_API_URL || 'http://94.20.88.181:5050').replace(/\/$/, '');
   const form = document.querySelector('#login-form');
   const loginInput = document.querySelector('#login');
   const passwordInput = document.querySelector('#password');
@@ -45,7 +46,7 @@
       setMessage('Serverə məlumat göndərilir...');
 
       try {
-        const response = await fetch('http://94.20.88.181:5050/api/login', {
+        const response = await fetch(`${apiBaseUrl}/api/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -174,7 +175,12 @@
           window.location.href = '../ana seyfe/ana-sehife.html';
         }, 700);
       } catch (error) {
-        setMessage('Serverə qoşulma uğursuz oldu. Serveri açın və port 5050 işlək olsun.');
+        const isHttpsPageUsingHttpApi = window.location.protocol === 'https:' && apiBaseUrl.startsWith('http://');
+        setMessage(
+          isHttpsPageUsingHttpApi
+            ? 'GitHub Pages HTTPS işlədiyi üçün API də HTTPS olmalıdır. Serveri HTTPS domenində yerləşdirin.'
+            : 'Serverə qoşulma uğursuz oldu. API ünvanını, portu və serverin işlədiyini yoxlayın.'
+        );
         setButtonLoading(false);
       }
     });

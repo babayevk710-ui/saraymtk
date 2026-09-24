@@ -1109,6 +1109,24 @@
   </div>
 
   <div class="toast" id="toast" role="status"></div>
+  <script>
+    window.TIGERX_API_URL = "https://sport-desirable-market-hours.trycloudflare.com";
+    (() => {
+      const secureApiUrl = window.TIGERX_API_URL.replace(/\/$/, '');
+      const nativeFetch = window.fetch.bind(window);
+      window.fetch = (resource, options) => {
+        if (typeof resource === 'string') {
+          resource = resource.replace(/^http:\/\/94\.20\.88\.181:5050/, secureApiUrl);
+        } else if (resource instanceof Request) {
+          const rewrittenUrl = resource.url.replace(/^http:\/\/94\.20\.88\.181:5050/, secureApiUrl);
+          if (rewrittenUrl !== resource.url) {
+            resource = new Request(rewrittenUrl, resource);
+          }
+        }
+        return nativeFetch(resource, options);
+      };
+    })();
+  </script>
   <script src="ana-sehife.js"></script>
   <script src="menyular/etiket-capi.js"></script>
   <script src="menyular/qiymet-deyisenler-list.js"></script>

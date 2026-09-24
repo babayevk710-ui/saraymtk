@@ -1,5 +1,5 @@
 (() => {
-  const apiBaseUrl = String(window.TIGERX_API_URL || 'http://94.20.88.181:5050').replace(/\/$/, '');
+  const apiBaseUrl = String(window.TIGERX_API_URL || 'https://sport-desirable-market-hours.trycloudflare.com').replace(/\/$/, '');
   const form = document.querySelector('#login-form');
   const loginInput = document.querySelector('#login');
   const passwordInput = document.querySelector('#password');
